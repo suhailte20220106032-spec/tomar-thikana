@@ -1,18 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
 
 interface ProductCardProps {
-  image: string;
+  image: any;
   title: string;
   category: string;
   price?: string;
 }
 
 const ProductCard = ({ image, title, category, price }: ProductCardProps) => {
+  const imageSrc = typeof image === "string" ? image : (image?.src || image);
+  
   return (
     <Card className="group overflow-hidden border-border hover:shadow-soft transition-all duration-300">
       <div className="aspect-square overflow-hidden">
         <img
-          src={image}
+          src={imageSrc}
           alt={title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />

@@ -1,11 +1,14 @@
+"use client";
+
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   const links = [
     { to: "/", label: "Home" },
@@ -15,13 +18,13 @@ const Navigation = () => {
     { to: "/contact", label: "Contact" },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => pathname === path;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="font-display text-2xl font-semibold text-foreground hover:text-primary transition-colors">
+          <Link href="/" className="font-display text-2xl font-semibold text-foreground hover:text-primary transition-colors">
             তোমার ঠিকানা
           </Link>
 
@@ -30,7 +33,7 @@ const Navigation = () => {
             {links.map((link) => (
               <Link
                 key={link.to}
-                to={link.to}
+                href={link.to}
                 className={`px-4 py-2 rounded-lg font-body transition-colors ${
                   isActive(link.to)
                     ? "text-primary font-medium"
@@ -59,7 +62,7 @@ const Navigation = () => {
             {links.map((link) => (
               <Link
                 key={link.to}
-                to={link.to}
+                href={link.to}
                 onClick={() => setIsOpen(false)}
                 className={`block px-4 py-3 rounded-lg font-body transition-colors ${
                   isActive(link.to)

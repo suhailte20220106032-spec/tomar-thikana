@@ -35,7 +35,7 @@ export default function AboutPage() {
                 তোমার ঠিকানা was born from a passion for creating meaningful, personalized gifts that preserve memories and celebrate special moments. Each piece we craft tells a unique story.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We believe in the beauty of handmade creations. From resin jewellery that captures nature's essence to custom photo frames that preserve precious memories, every item is made with meticulous attention to detail and genuine care.
+                We believe in the beauty of handmade creations. From resin jewellery that captures nature&apos;s essence to custom photo frames that preserve precious memories, every item is made with meticulous attention to detail and genuine care.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Our commitment to quality and customization ensures that your gift is not just an object, but a cherished keepsake that will be treasured for years to come.

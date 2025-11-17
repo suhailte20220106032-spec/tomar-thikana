@@ -59,7 +59,7 @@ const Footer = () => {
               Email: contact@tomarthikana.com
             </p>
             <p className="text-muted-foreground">
-              We'd love to hear from you!
+              We&apos;d love to hear from you!
             </p>
           </div>
         </div>

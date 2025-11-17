@@ -16,7 +16,7 @@ const TestimonialCard = ({ name, text, rating }: TestimonialCardProps) => {
             <Star key={i} className="h-5 w-5 text-primary fill-primary" />
           ))}
         </div>
-        <p className="text-muted-foreground mb-4 italic">"{text}"</p>
+        <p className="text-muted-foreground mb-4 italic">&quot;{text}&quot;</p>
         <p className="font-display font-semibold">— {name}</p>
       </CardContent>
     </Card>

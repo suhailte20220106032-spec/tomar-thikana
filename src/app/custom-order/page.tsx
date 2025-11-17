@@ -29,7 +29,7 @@ export default function CustomOrderPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Order submitted! We'll contact you soon.");
+    toast.success("Order submitted! We&apos;ll contact you soon.");
     setFormData({
       name: "",
       email: "",
@@ -53,7 +53,7 @@ export default function CustomOrderPage() {
           <div className="text-center mb-12 slide-up">
             <h1 className="font-display text-5xl font-bold mb-4">Custom Order</h1>
             <p className="text-muted-foreground text-lg">
-              Let's create something special together. Share your vision with us!
+              Let&apos;s create something special together. Share your vision with us!
             </p>
           </div>
 
@@ -165,7 +165,7 @@ export default function CustomOrderPage() {
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center">
-                  We'll review your order and contact you within 24 hours
+                  We&apos;ll review your order and contact you within 24 hours
                 </p>
               </form>
             </CardContent>

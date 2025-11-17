@@ -21,7 +21,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! We'll get back to you soon.");
+    toast.success("Message sent! We&apos;ll get back to you soon.");
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
@@ -39,7 +39,7 @@ export default function ContactPage() {
           <div className="text-center mb-12 slide-up">
             <h1 className="font-display text-5xl font-bold mb-4">Get in Touch</h1>
             <p className="text-muted-foreground text-lg">
-              We'd love to hear from you. Send us a message!
+              We&apos;d love to hear from you. Send us a message!
             </p>
           </div>
 

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#e8b4a0" rx="12"/>
+  
+  <!-- Gift box base -->
+  <rect x="16" y="30" width="32" height="22" fill="#ff6b9d" rx="2"/>
+  
+  <!-- Gift box lid -->
+  <rect x="14" y="24" width="36" height="8" fill="#ff8fb3" rx="1"/>
+  
+  <!-- Vertical ribbon -->
+  <rect x="29" y="24" width="6" height="28" fill="#ffd700"/>
+  
+  <!-- Horizontal ribbon on lid -->
+  <rect x="14" y="26" width="36" height="4" fill="#ffd700"/>
+  
+  <!-- Bow loops -->
+  <ellipse cx="26" cy="20" rx="5" ry="4" fill="#ffd700"/>
+  <ellipse cx="38" cy="20" rx="5" ry="4" fill="#ffd700"/>
+  
+  <!-- Bow center -->
+  <circle cx="32" cy="20" r="3" fill="#ffed4e"/>
+  
+  <!-- Bow ribbons hanging down -->
+  <path d="M29 22 L27 28 L25 27 L27 21 Z" fill="#ffd700"/>
+  <path d="M35 22 L37 28 L39 27 L37 21 Z" fill="#ffd700"/>
+  
+  <!-- Shine effect on box -->
+  <rect x="18" y="32" width="3" height="8" fill="#fff" opacity="0.3" rx="1"/>
+</svg>

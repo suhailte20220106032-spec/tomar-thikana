@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Heart, Sparkles, Users } from "lucide-react";
-import aboutImage from "@/assets/about-craft.jpg";
 
 export default function AboutPage() {
   return (
@@ -22,7 +21,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="slide-up">
               <img
-                src={(aboutImage as any)?.src || aboutImage}
+                src='/assets/about-craft.jpg'
                 alt="Crafting process"
                 className="rounded-2xl shadow-soft"
               />

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -25,7 +25,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="font-display text-2xl font-semibold text-foreground hover:text-primary transition-colors">
-            তোমার ঠিকানা
+            <Image src="/logo.svg" alt="Tomar Thikana logo" width={200} height={50} className="object-cover" style={{ height: '50px', width: '200px' }} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,11 +34,10 @@ const Navigation = () => {
               <Link
                 key={link.to}
                 href={link.to}
-                className={`px-4 py-2 rounded-lg font-body transition-colors ${
-                  isActive(link.to)
-                    ? "text-primary font-medium"
-                    : "text-foreground hover:text-primary"
-                }`}
+                className={`px-4 py-2 rounded-lg font-body transition-colors ${isActive(link.to)
+                  ? "text-primary font-medium"
+                  : "text-foreground hover:text-primary"
+                  }`}
               >
                 {link.label}
               </Link>
@@ -64,11 +63,10 @@ const Navigation = () => {
                 key={link.to}
                 href={link.to}
                 onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 rounded-lg font-body transition-colors ${
-                  isActive(link.to)
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-secondary"
-                }`}
+                className={`block px-4 py-3 rounded-lg font-body transition-colors ${isActive(link.to)
+                  ? "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-secondary"
+                  }`}
               >
                 {link.label}
               </Link>

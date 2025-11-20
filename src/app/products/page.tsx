@@ -5,10 +5,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
-import productResin from "@/assets/product-resin-1.jpg";
-import productFrame from "@/assets/product-frame-1.jpg";
-import productGift from "@/assets/product-gift-1.jpg";
-import productMemory from "@/assets/product-memory-1.jpg";
 
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -23,56 +19,56 @@ export default function ProductsPage() {
 
   const products = [
     {
-      image: productResin,
+      image: "/assets/product-resin-1.jpg",
       title: "Floral Resin Pendant",
       category: "jewellery",
       categoryName: "Resin Jewellery",
       price: "৳850",
     },
     {
-      image: productFrame,
+      image: "/assets/product-frame-1.jpg",
       title: "Custom Photo Frame",
       category: "frames",
       categoryName: "Photo Frames",
       price: "৳1,200",
     },
     {
-      image: productGift,
+      image: "/assets/product-gift-1.jpg",
       title: "Personalized Gift Box",
       category: "gifts",
       categoryName: "Custom Gifts",
       price: "৳1,500",
     },
     {
-      image: productMemory,
+      image: "/assets/product-memory-1.jpg",
       title: "Memory Keepsake",
       category: "custom",
       categoryName: "Memory Preservation",
       price: "৳2,000",
     },
     {
-      image: productResin,
+      image: "/assets/product-resin-1.jpg",
       title: "Ocean Wave Bracelet",
       category: "jewellery",
       categoryName: "Resin Jewellery",
       price: "৳950",
     },
     {
-      image: productFrame,
+      image: "/assets/product-frame-1.jpg",
       title: "Anniversary Frame Set",
       category: "frames",
       categoryName: "Photo Frames",
       price: "৳1,800",
     },
     {
-      image: productGift,
+      image: "/assets/product-gift-1.jpg",
       title: "Birthday Gift Bundle",
       category: "gifts",
       categoryName: "Custom Gifts",
       price: "৳2,200",
     },
     {
-      image: productMemory,
+      image: "/assets/product-memory-1.jpg",
       title: "Wedding Memory Box",
       category: "custom",
       categoryName: "Custom Orders",

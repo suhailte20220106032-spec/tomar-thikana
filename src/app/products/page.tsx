@@ -1,85 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
+import { categories, getProductsByCategory, formatPrice } from "@/lib/products";
 
 export default function ProductsPage() {
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category");
+  
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const categories = [
-    { id: "all", label: "All Products" },
-    { id: "gifts", label: "Custom Gifts" },
-    { id: "jewellery", label: "Resin Jewellery" },
-    { id: "frames", label: "Photo Frames" },
-    { id: "custom", label: "Custom Orders" },
-  ];
+  useEffect(() => {
+    if (categoryParam && categories.some(cat => cat.id === categoryParam)) {
+      setActiveCategory(categoryParam);
+    }
+  }, [categoryParam]);
 
-  const products = [
-    {
-      image: "/assets/product-resin-1.jpg",
-      title: "Floral Resin Pendant",
-      category: "jewellery",
-      categoryName: "Resin Jewellery",
-      price: "৳850",
-    },
-    {
-      image: "/assets/product-frame-1.jpg",
-      title: "Custom Photo Frame",
-      category: "frames",
-      categoryName: "Photo Frames",
-      price: "৳1,200",
-    },
-    {
-      image: "/assets/product-gift-1.jpg",
-      title: "Personalized Gift Box",
-      category: "gifts",
-      categoryName: "Custom Gifts",
-      price: "৳1,500",
-    },
-    {
-      image: "/assets/product-memory-1.jpg",
-      title: "Memory Keepsake",
-      category: "custom",
-      categoryName: "Memory Preservation",
-      price: "৳2,000",
-    },
-    {
-      image: "/assets/product-resin-1.jpg",
-      title: "Ocean Wave Bracelet",
-      category: "jewellery",
-      categoryName: "Resin Jewellery",
-      price: "৳950",
-    },
-    {
-      image: "/assets/product-frame-1.jpg",
-      title: "Anniversary Frame Set",
-      category: "frames",
-      categoryName: "Photo Frames",
-      price: "৳1,800",
-    },
-    {
-      image: "/assets/product-gift-1.jpg",
-      title: "Birthday Gift Bundle",
-      category: "gifts",
-      categoryName: "Custom Gifts",
-      price: "৳2,200",
-    },
-    {
-      image: "/assets/product-memory-1.jpg",
-      title: "Wedding Memory Box",
-      category: "custom",
-      categoryName: "Custom Orders",
-      price: "৳2,500",
-    },
-  ];
-
-  const filteredProducts =
-    activeCategory === "all"
-      ? products
-      : products.filter((product) => product.category === activeCategory);
+  const filteredProducts = getProductsByCategory(activeCategory);
 
   return (
     <div className="min-h-screen bg-background">
@@ -112,14 +54,19 @@ export default function ProductsPage() {
           {/* Products Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {filteredProducts.map((product, index) => (
-              <div key={index} className="slide-up" style={{ animationDelay: `${index * 0.05}s` }}>
+              <Link 
+                key={product.id} 
+                href={`/products/${product.id}`}
+                className="slide-up" 
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
                 <ProductCard
-                  image={product.image}
-                  title={product.title}
-                  category={product.categoryName}
-                  price={product.price}
+                  image={product.mainImage}
+                  title={product.name}
+                  category={categories.find(cat => cat.id === product.category)?.label || product.category}
+                  price={formatPrice(product.price)}
                 />
-              </div>
+              </Link>
             ))}
           </div>
 

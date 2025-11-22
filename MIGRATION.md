@@ -8,7 +8,7 @@ This project has been successfully migrated from Vite + React to Next.js 14 with
 ├── src/
 │   ├── app/                    # Next.js App Router
 │   │   ├── layout.tsx         # Root layout
-│   │   ├── page.tsx           # Home page
+│   │   ├── page.tsx           # Home page (modular)
 │   │   ├── globals.css        # Global styles
 │   │   ├── about/
 │   │   │   └── page.tsx       # About page
@@ -23,12 +23,18 @@ This project has been successfully migrated from Vite + React to Next.js 14 with
 │   │   ├── Navigation.tsx     # Navigation component (uses next/link)
 │   │   ├── Footer.tsx         # Footer component
 │   │   ├── ProductCard.tsx    # Product card component
-│   │   ├── TestimonialCard.tsx
+│   │   ├── TestimonialCard.tsx # Testimonial card component
+│   │   ├── HeroSection.tsx    # Hero section with carousel
+│   │   ├── FeaturesSection.tsx # Features section
+│   │   ├── FeaturedProductsSection.tsx # Featured products section
+│   │   ├── TestimonialsSection.tsx # Testimonials section
+│   │   ├── CTASection.tsx     # Call-to-action section
 │   │   └── ui/                # shadcn/ui components
-│   ├── assets/                # Static assets (images)
+│   ├── assets/                # Static assets (legacy)
 │   ├── lib/                   # Utility functions
 │   └── hooks/                 # Custom React hooks
 ├── public/                    # Public static files
+│   └── assets/                # Images (hero, products, etc.)
 ├── next.config.js             # Next.js configuration
 ├── tsconfig.json              # TypeScript configuration
 ├── tailwind.config.ts         # Tailwind CSS configuration

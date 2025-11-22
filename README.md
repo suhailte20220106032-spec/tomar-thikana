@@ -5,12 +5,14 @@ A beautiful handcrafted gifts and jewelry e-commerce website built with Next.js 
 ## ✨ Features
 
 - 🎨 Beautiful, responsive UI with Tailwind CSS
+- 🎠 Auto-playing image carousel in hero section
 - 🛍️ Product catalog with category filtering
 - 📝 Custom order form
 - 📧 Contact page with contact information
 - 📖 About page with brand story
 - 🎭 Smooth animations and transitions
 - 📱 Mobile-friendly navigation
+- 🧩 Modular component architecture
 - 🌙 Dark mode support (Tailwind configured)
 
 ## 🚀 Tech Stack
@@ -61,7 +63,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 src/
 ├── app/                    # Next.js App Router pages
 │   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Home page
+│   ├── page.tsx           # Home page (modular)
 │   ├── about/             # About page
 │   ├── contact/           # Contact page
 │   ├── custom-order/      # Custom order page
@@ -70,15 +72,23 @@ src/
 │   ├── Navigation.tsx     # Navigation bar
 │   ├── Footer.tsx         # Footer
 │   ├── ProductCard.tsx    # Product card
+│   ├── TestimonialCard.tsx # Testimonial card
+│   ├── HeroSection.tsx    # Hero with image carousel
+│   ├── FeaturesSection.tsx # Features section
+│   ├── FeaturedProductsSection.tsx # Products section
+│   ├── TestimonialsSection.tsx # Testimonials section
+│   ├── CTASection.tsx     # Call-to-action section
 │   └── ui/                # shadcn/ui components
-├── assets/                # Images and static assets
+├── assets/                # Legacy assets
 ├── lib/                   # Utility functions
 └── hooks/                 # Custom React hooks
+public/
+└── assets/                # Images (hero, products, etc.)
 ```
 
 ## 🎯 Pages
 
-- **Home** (`/`) - Hero section, featured products, testimonials
+- **Home** (`/`) - Hero carousel, featured products, features section, testimonials, CTA
 - **Products** (`/products`) - Product catalog with category filters
 - **Custom Order** (`/custom-order`) - Custom order form
 - **About** (`/about`) - Brand story and values

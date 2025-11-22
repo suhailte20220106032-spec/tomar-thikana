@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 interface ProductCardProps {
   image: any;
@@ -12,11 +13,15 @@ const ProductCard = ({ image, title, category, price }: ProductCardProps) => {
   
   return (
     <Card className="group overflow-hidden border-border hover:shadow-soft transition-all duration-300">
-      <div className="aspect-square overflow-hidden">
-        <img
+      <div className="aspect-square overflow-hidden relative bg-muted">
+        <Image
           src={imageSrc}
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          quality={75}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+          loading="lazy"
         />
       </div>
       <CardContent className="p-6">

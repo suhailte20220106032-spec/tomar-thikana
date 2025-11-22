@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 /**
  * ScrollToTop Component
@@ -10,7 +10,6 @@ import { usePathname, useSearchParams } from "next/navigation";
  */
 export default function ScrollToTop() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const previousPathname = useRef<string | null>(null);
   const isBackNavigation = useRef(false);
 
@@ -36,7 +35,7 @@ export default function ScrollToTop() {
     // Reset back navigation flag
     isBackNavigation.current = false;
     previousPathname.current = pathname;
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   return null;
 }

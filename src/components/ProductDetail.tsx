@@ -50,7 +50,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
   };
 
   const handleContact = () => {
-    const message = `Hi! I'm interested in ${product.name} (${formatPrice(product.price)}) - Quantity: ${quantity}`;
+    const message = `Hi! I&apos;m interested in ${product.name} (${formatPrice(product.price)}) - Quantity: ${quantity}`;
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };

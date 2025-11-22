@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 import { Heart, Sparkles, Users } from "lucide-react";
 
 export default function AboutPage() {
@@ -19,11 +20,13 @@ export default function AboutPage() {
 
           {/* Main Content */}
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div className="slide-up">
-              <img
+            <div className="slide-up relative aspect-video">
+              <Image
                 src='/assets/about-craft.jpg'
                 alt="Crafting process"
-                className="rounded-2xl shadow-soft"
+                fill
+                className="rounded-2xl shadow-soft object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div className="space-y-6 slide-up">

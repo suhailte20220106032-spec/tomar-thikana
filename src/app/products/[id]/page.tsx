@@ -26,7 +26,7 @@ export default function ProductDetailPage() {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Product Not Found</h1>
             <p className="text-muted-foreground mb-8">
-              Sorry, we couldn't find the product you're looking for.
+              Sorry, we couldn&apos;t find the product you&apos;re looking for.
             </p>
             <Link href="/products">
               <Button>

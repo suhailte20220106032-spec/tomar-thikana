@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -73,10 +74,14 @@ const HeroSection = () => {
                 {heroImages.map((image, index) => (
                   <CarouselItem key={index}>
                     <div className="relative aspect-square md:aspect-auto md:h-[500px]">
-                      <img
+                      <Image
                         src={image.src}
                         alt={image.alt}
-                        className="w-full h-full object-cover rounded-2xl shadow-soft"
+                        fill
+                        className="object-cover rounded-2xl shadow-soft"
+                        priority={index === 0}
+                        quality={85}
+                        sizes="(max-width: 768px) 100vw, 50vw"
                       />
                     </div>
                   </CarouselItem>

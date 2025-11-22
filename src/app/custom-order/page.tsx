@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,10 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Upload } from "lucide-react";
 import { toast } from "sonner";
+
+// Note: Metadata must be exported from a Server Component or layout
+// For now, custom-order page remains client-side for form interactivity
+// TODO: Consider wrapping in Server Component for metadata and FAQ schema
 
 export default function CustomOrderPage() {
   const [formData, setFormData] = useState({

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, Instagram, Facebook, MapPin } from "lucide-react";
 import { toast } from "sonner";
+
+// Note: Metadata must be exported from a Server Component or layout
+// For now, contact page remains client-side for form interactivity
+// TODO: Consider wrapping in Server Component for metadata
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({

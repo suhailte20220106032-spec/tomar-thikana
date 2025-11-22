@@ -1,11 +1,48 @@
+import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { Heart, Sparkles, Users } from "lucide-react";
+import { generateLocalBusinessSchema, generateJsonLd } from "@/lib/structured-data";
+
+const SITE_URL = "https://tomar-thikana.vercel.app";
+
+export const metadata: Metadata = {
+  title: "About Us - Our Story | Handmade Jewelry & Custom Gifts",
+  description:
+    "Learn about তোমার ঠিকানা (Tomar Thikana) - Your trusted source for handmade resin jewelry, jhumka earrings, preserved flower pendants, and custom gifts in Dhaka, Bangladesh. আমাদের সম্পর্কে জানুন।",
+  keywords: [
+    "about Tomar Thikana",
+    "handmade jewelry maker Bangladesh",
+    "resin jewelry artisan Dhaka",
+    "custom gift shop Bangladesh",
+    "হাতে তৈরি গয়না",
+    "তোমার ঠিকানা",
+  ],
+  openGraph: {
+    title: "About তোমার ঠিকানা - Handmade Jewelry & Custom Gifts | Bangladesh",
+    description:
+      "Handcrafted with love in Bangladesh. Resin jewelry, jhumka, preserved flower pendants, custom gifts. আমাদের সম্পর্কে জানুন।",
+    images: ["/assets/about-craft.jpg"],
+    url: `${SITE_URL}/about`,
+  },
+  alternates: {
+    canonical: `${SITE_URL}/about`,
+  },
+};
 
 export default function AboutPage() {
+  const localBusinessSchema = generateLocalBusinessSchema();
+
   return (
     <div className="min-h-screen bg-background">
+      {/* Structured Data - LocalBusiness Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={generateJsonLd(localBusinessSchema)}
+        key="localbusiness-jsonld"
+      />
+
       <Navigation />
 
       <div className="pt-32 pb-20">

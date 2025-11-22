@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
 import SmoothScroll from "@/components/SmoothScroll";
 import BackToTop from "@/components/BackToTop";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function ClientProviders({
   children,
@@ -19,6 +20,7 @@ export default function ClientProviders({
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <SmoothScroll />
+        <ScrollToTop />
         <Toaster />
         <Sonner />
         {children}

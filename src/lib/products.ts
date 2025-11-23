@@ -247,8 +247,9 @@ export const products: Product[] = [
   },
   {
     id: "ear-800-12",
-    name: "Art Nouveau Floral Earrings",
-    description: "Art Nouveau inspired floral statement earrings with elegant curved designs and premium resin craftsmanship",
+    name: "Art Nouveau Floral Earrings - Handmade Resin Jewelry",
+    nameBn: "আর্ট নুভো ফুলের কানের দুল",
+    description: "Art Nouveau inspired floral statement earrings with elegant curved designs. হাতে তৈরি রেজিন জুয়েলারি। Premium handmade resin jewelry Bangladesh with artistic craftsmanship. Price: ৳800. Free delivery in Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 800,
     category: "earrings",
     images: [
@@ -258,8 +259,9 @@ export const products: Product[] = [
   },
   {
     id: "ear-800-13",
-    name: "Tropical Paradise Earrings",
-    description: "Vibrant tropical-themed statement earrings with exotic floral designs in colorful handcrafted resin jewelry",
+    name: "Tropical Paradise Earrings - Handmade Resin Jewelry",
+    nameBn: "ট্রপিক্যাল ফুলের কানের দুল",
+    description: "Vibrant tropical-themed statement earrings with exotic floral designs. রঙিন রেজিন জুয়েলারি। Colorful handmade resin jewelry Bangladesh perfect for summer style. Price: ৳800. Free delivery Gulshan, Dhanmondi, Mirpur.",
     price: 800,
     category: "earrings",
     images: [
@@ -269,8 +271,9 @@ export const products: Product[] = [
   },
   {
     id: "ear-800-14",
-    name: "Crystal Waterfall Earrings",
-    description: "Cascading crystal waterfall design statement earrings with premium resin and flowing floral elements",
+    name: "Crystal Waterfall Earrings - Handmade Resin Jewelry",
+    nameBn: "ক্রিস্টাল জলপ্রপাত কানের দুল",
+    description: "Cascading crystal waterfall design statement earrings with flowing floral elements. হাতে তৈরি প্রিমিয়াম গহনা। Premium handmade resin jewelry Bangladesh with unique design. Price: ৳800. Free delivery in Dhaka areas.",
     price: 800,
     category: "earrings",
     images: [
@@ -280,8 +283,9 @@ export const products: Product[] = [
   },
   {
     id: "ear-800-15",
-    name: "Spring Meadow Earrings",
-    description: "Fresh spring meadow inspired statement earrings with delicate floral touches in handcrafted premium resin",
+    name: "Spring Meadow Earrings - Handmade Resin Jewelry",
+    nameBn: "বসন্ত ফুলের কানের দুল",
+    description: "Fresh spring meadow inspired statement earrings with delicate floral touches. বসন্তের গহনা। Handmade resin jewelry Bangladesh perfect for spring occasions. Price: ৳800. Free delivery Gulshan, Dhanmondi, Bashundhara.",
     price: 800,
     category: "earrings",
     images: [
@@ -291,8 +295,9 @@ export const products: Product[] = [
   },
   {
     id: "ear-800-16",
-    name: "Stardust Shimmer Earrings",
-    description: "Shimmering stardust effect statement earrings with glitter and preserved floral elements in premium quality resin",
+    name: "Stardust Shimmer Earrings - Handmade Resin Jewelry",
+    nameBn: "তারার ঝলক কানের দুল",
+    description: "Shimmering stardust effect statement earrings with glitter and preserved flowers. ঝলমলে গহনা। Premium handmade resin jewelry Bangladesh with sparkle effect. Price: ৳800. Free delivery in Dhaka (Gulshan, Dhanmondi, Mirpur).",
     price: 800,
     category: "earrings",
     images: [
@@ -302,8 +307,9 @@ export const products: Product[] = [
   },
   {
     id: "ear-800-17",
-    name: "Royal Garden Collection Earrings",
-    description: "Regal garden-themed statement earrings with premium detailing and handcrafted luxury resin jewelry craftsmanship",
+    name: "Royal Garden Collection Earrings - Handmade Resin Jewelry",
+    nameBn: "রাজকীয় বাগান কানের দুল",
+    description: "Regal garden-themed statement earrings with premium detailing. রাজকীয় ডিজাইন। Luxury handmade resin jewelry Bangladesh craftsmanship. Price: ৳800. Free delivery Gulshan, Dhanmondi, Bashundhara, Mirpur.",
     price: 800,
     category: "earrings",
     images: [
@@ -313,8 +319,9 @@ export const products: Product[] = [
   },
   {
     id: "ear-800-18",
-    name: "Aurora Borealis Earrings",
-    description: "Northern lights inspired statement earrings with mesmerizing color gradients in premium handcrafted resin",
+    name: "Aurora Borealis Earrings - Handmade Resin Jewelry",
+    nameBn: "অরোরা রঙের কানের দুল",
+    description: "Northern lights inspired statement earrings with mesmerizing color gradients. রঙিন গ্রেডিয়েন্ট ডিজাইন। Premium handmade resin jewelry Bangladesh with unique color effect. Price: ৳800. Free delivery in Dhaka areas.",
     price: 800,
     category: "earrings",
     images: [
@@ -324,8 +331,9 @@ export const products: Product[] = [
   },
   {
     id: "ear-800-19",
-    name: "Vintage Lace Pattern Earrings",
-    description: "Delicate lace pattern statement earrings in premium resin, vintage-inspired design with modern elegance",
+    name: "Vintage Lace Pattern Earrings - Handmade Resin Jewelry",
+    nameBn: "ভিনটেজ লেইস কানের দুল",
+    description: "Delicate lace pattern statement earrings in premium resin. ভিনটেজ ডিজাইন। Vintage-inspired handmade resin jewelry Bangladesh with modern elegance. Price: ৳800. Free delivery Gulshan, Dhanmondi, Bashundhara.",
     price: 800,
     category: "earrings",
     images: [
@@ -395,8 +403,9 @@ export const products: Product[] = [
   },
   {
     id: "key-80-2",
-    name: "Letter M Personalized Keychain",
-    description: "Customized letter M initial keychain in colorful handcrafted resin, perfect personalized gift accessory for names starting with M",
+    name: "Letter M Personalized Keychain - Custom Resin Gift",
+    nameBn: "এম অক্ষর চাবির রিং",
+    description: "Customized letter M initial keychain in colorful handcrafted resin. পার্সনালাইজড গিফট। Perfect personalized gift accessory for names starting with M in Bangladesh. Price: ৳80. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 80,
     category: "keychains",
     images: [
@@ -406,8 +415,9 @@ export const products: Product[] = [
   },
   {
     id: "key-80-3",
-    name: "Letter P Custom Keychain",
-    description: "Personalized letter P initial keychain with beautiful floral design in handcrafted resin, ideal accessory for custom gifts",
+    name: "Letter P Custom Keychain - Personalized Gift Bangladesh",
+    nameBn: "পি অক্ষর চাবির রিং",
+    description: "Personalized letter P initial keychain with beautiful floral design. হাতে তৈরি কাস্টম গিফট। Handmade resin gift Bangladesh ideal accessory for custom gifts. Price: ৳80. Free delivery in Dhaka.",
     price: 80,
     category: "keychains",
     images: [
@@ -417,8 +427,9 @@ export const products: Product[] = [
   },
   {
     id: "key-80-4",
-    name: "Letter Z Alphabet Keychain",
-    description: "Colorful letter Z initial keychain with decorative elements in handcrafted resin, custom alphabet accessory for personalization",
+    name: "Letter Z Alphabet Keychain - Custom Resin Gift",
+    nameBn: "জেড অক্ষর চাবির রিং",
+    description: "Colorful letter Z initial keychain with decorative elements. হাতে তৈরি রেজিন গিফট। Handmade resin gift Bangladesh custom alphabet accessory for personalization. Price: ৳80. Free delivery Gulshan, Dhanmondi, Mirpur.",
     price: 80,
     category: "keychains",
     images: [
@@ -433,8 +444,9 @@ export const products: Product[] = [
   },
   {
     id: "key-80-5",
-    name: "Letter N Initial Keychain",
-    description: "Handcrafted letter N initial keychain with beautiful resin design, personalized alphabet accessory perfect for gifts",
+    name: "Letter N Initial Keychain - Personalized Gift Bangladesh",
+    nameBn: "এন অক্ষর চাবির রিং",
+    description: "Handcrafted letter N initial keychain with beautiful resin design. পার্সনালাইজড চাবির রিং। Personalized alphabet accessory perfect for gifts in Bangladesh. Price: ৳80. Free delivery in Dhaka areas.",
     price: 80,
     category: "keychains",
     images: [
@@ -463,8 +475,9 @@ export const products: Product[] = [
   // ============ KEYCHAINS - 99tk ============
   {
     id: "key-99-1",
-    name: "Letter S Personalized Keychain",
-    description: "Custom letter S initial keychain with premium finish and floral elements in handcrafted resin, perfect accessory for personalization",
+    name: "Letter S Personalized Keychain - Custom Resin Gift",
+    nameBn: "এস অক্ষর চাবির রিং",
+    description: "Custom letter S initial keychain with premium finish and floral elements. হাতে তৈরি গিফট। Handmade resin gift Bangladesh perfect accessory for personalization. Price: ৳99. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 99,
     category: "keychains",
     images: [
@@ -479,8 +492,9 @@ export const products: Product[] = [
   },
   {
     id: "key-99-2",
-    name: "Letter V Alphabet Keychain",
-    description: "Stylish letter V initial keychain in colorful handcrafted resin, perfect personalized gift accessory with unique design",
+    name: "Letter V Alphabet Keychain - Personalized Gift Bangladesh",
+    nameBn: "ভি অক্ষর চাবির রিং",
+    description: "Stylish letter V initial keychain in colorful handcrafted resin. কাস্টম গিফট। Perfect personalized gift accessory Bangladesh with unique design. Price: ৳99. Free delivery in Dhaka areas (Gulshan, Dhanmondi, Mirpur).",
     price: 99,
     category: "keychains",
     images: [
@@ -540,8 +554,9 @@ export const products: Product[] = [
   // ============ PENDANTS - 290tk ============
   {
     id: "pen-290-1",
-    name: "Daisy Flower Pendant Necklace",
-    description: "Fresh daisy flower pendant preserved in crystal clear resin, delicate handcrafted jewelry perfect for nature lovers and everyday wear",
+    name: "Daisy Flower Pendant Necklace - Handmade Resin Jewelry",
+    nameBn: "ডেজি ফুল পেন্ডেন্ট",
+    description: "Fresh daisy flower pendant preserved in crystal clear resin. হাতে তৈরি পেন্ডেন্ট। Delicate handmade resin jewelry Bangladesh perfect for nature lovers and everyday wear. Price: ৳290. Free delivery Dhaka.",
     price: 290,
     category: "pendants",
     images: [
@@ -570,8 +585,9 @@ export const products: Product[] = [
   },
   {
     id: "pen-290-3",
-    name: "Rose Petal Pendant Necklace",
-    description: "Romantic rose petal pendant with preserved petals in crystal resin, elegant handcrafted jewelry perfect for special occasions",
+    name: "Rose Petal Pendant Necklace - Handmade Resin Jewelry",
+    nameBn: "গোলাপ পাপড়ি পেন্ডেন্ট",
+    description: "Romantic rose petal pendant with preserved petals in crystal resin. গোলাপ পেন্ডেন্ট। Elegant handmade resin jewelry Bangladesh perfect for special occasions. Price: ৳290. Free delivery in Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 290,
     category: "pendants",
     images: [
@@ -586,8 +602,9 @@ export const products: Product[] = [
   // ============ PENDANTS - 499tk ============
   {
     id: "pen-499-1",
-    name: "Black & Pink Gradient Pendant",
-    description: "Stunning black and pink gradient pendant with premium handcrafted resin jewelry featuring modern artistic design",
+    name: "Black & Pink Gradient Pendant - Handmade Resin Jewelry",
+    nameBn: "কালো গোলাপি পেন্ডেন্ট",
+    description: "Stunning black and pink gradient pendant with modern artistic design. আধুনিক ডিজাইন। Premium handmade resin jewelry Bangladesh with unique color blend. Price: ৳499. Free delivery Dhaka (Gulshan, Dhanmondi, Mirpur).",
     price: 499,
     category: "pendants",
     images: [
@@ -632,8 +649,9 @@ export const products: Product[] = [
   },
   {
     id: "pen-499-4",
-    name: "Regular Floral Pendant Collection",
-    description: "Beautiful floral pendant necklaces with preserved flowers in handcrafted resin jewelry, available in various vibrant colors",
+    name: "Regular Floral Pendant Collection - Handmade Resin Jewelry",
+    nameBn: "ফুলের পেন্ডেন্ট কালেকশন",
+    description: "Beautiful floral pendant necklaces with preserved flowers in resin. হাতে তৈরি পেন্ডেন্ট। Handmade resin jewelry Bangladesh available in various vibrant colors. Price: ৳499. Free delivery in Dhaka areas.",
     price: 499,
     category: "pendants",
     images: [
@@ -648,8 +666,9 @@ export const products: Product[] = [
   },
   {
     id: "pen-499-5",
-    name: "Natural Leaf Pendant Necklace",
-    description: "Organic leaf pendant with real preserved leaves in crystal resin, nature-inspired handcrafted jewelry for botanical lovers",
+    name: "Natural Leaf Pendant Necklace - Handmade Resin Jewelry",
+    nameBn: "পাতার পেন্ডেন্ট",
+    description: "Organic leaf pendant with real preserved leaves in crystal resin. প্রাকৃতিক পাতার গহনা। Nature-inspired handmade resin jewelry Bangladesh for botanical lovers. Price: ৳499. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 499,
     category: "pendants",
     images: [
@@ -663,8 +682,9 @@ export const products: Product[] = [
   },
   {
     id: "pen-499-6",
-    name: "Pink Rose Garden Pendant",
-    description: "Delicate pink rose pendant with preserved petals in resin, romantic handcrafted jewelry perfect for elegant style",
+    name: "Pink Rose Garden Pendant - Handmade Resin Jewelry",
+    nameBn: "গোলাপি গোলাপ পেন্ডেন্ট",
+    description: "Delicate pink rose pendant with preserved petals in resin. রোমান্টিক পেন্ডেন্ট। Romantic handmade resin jewelry Bangladesh perfect for elegant style. Price: ৳499. Free delivery in Dhaka.",
     price: 499,
     category: "pendants",
     images: [
@@ -689,8 +709,9 @@ export const products: Product[] = [
   },
   {
     id: "pen-499-8",
-    name: "Round Rose Pendant Necklace",
-    description: "Classic round rose pendant with preserved flowers in resin, timeless handcrafted jewelry design",
+    name: "Round Rose Pendant Necklace - Handmade Resin Jewelry",
+    nameBn: "গোল গোলাপ পেন্ডেন্ট",
+    description: "Classic round rose pendant with preserved flowers in resin. ক্লাসিক ডিজাইন। Timeless handmade resin jewelry Bangladesh design. Price: ৳499. Free delivery Dhaka (Gulshan, Dhanmondi, Mirpur).",
     price: 499,
     category: "pendants",
     images: [
@@ -702,8 +723,9 @@ export const products: Product[] = [
   },
   {
     id: "pen-499-9",
-    name: "Teardrop Rose Pendant Necklace",
-    description: "Elegant teardrop-shaped rose pendant with romantic preserved flower design in premium handcrafted resin",
+    name: "Teardrop Rose Pendant Necklace - Handmade Resin Jewelry",
+    nameBn: "টিয়ারড্রপ গোলাপ পেন্ডেন্ট",
+    description: "Elegant teardrop-shaped rose pendant with romantic preserved flower design. হাতে তৈরি পেন্ডেন্ট। Premium handmade resin jewelry Bangladesh. Price: ৳499. Free delivery in Dhaka areas.",
     price: 499,
     category: "pendants",
     images: [
@@ -764,8 +786,9 @@ export const products: Product[] = [
   // ============ BOOKMARKS - 99tk ============
   {
     id: "book-99-1",
-    name: "Floral Pressed Bookmark",
-    description: "Delicate pressed flower bookmark preserved in clear resin, beautiful handcrafted reading accessory for book lovers and readers",
+    name: "Floral Pressed Bookmark - Handmade Gift Bangladesh",
+    nameBn: "ফুলের বুকমার্ক",
+    description: "Delicate pressed flower bookmark preserved in clear resin. হাতে তৈরি বুকমার্ক। Beautiful handmade gift Bangladesh reading accessory for book lovers. Price: ৳99. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 99,
     category: "bookmarks",
     images: [
@@ -791,8 +814,9 @@ export const products: Product[] = [
   },
   {
     id: "book-199-2",
-    name: "Pink Floral Tassel Bookmark",
-    description: "Elegant pink floral bookmark with decorative tassel design in premium handcrafted resin, perfect for book enthusiasts",
+    name: "Pink Floral Tassel Bookmark - Handmade Gift Bangladesh",
+    nameBn: "গোলাপি ফুলের বুকমার্ক",
+    description: "Elegant pink floral bookmark with decorative tassel design. হাতে তৈরি রেজিন গিফট। Premium handmade resin gift Bangladesh perfect for book enthusiasts. Price: ৳199. Free delivery in Dhaka.",
     price: 199,
     category: "bookmarks",
     images: [
@@ -839,8 +863,9 @@ export const products: Product[] = [
   },
   {
     id: "pen-2",
-    name: "Regular Floral Resin Pen",
-    description: "Beautiful floral design resin pen with preserved flowers, handcrafted writing accessory perfect for daily use",
+    name: "Regular Floral Resin Pen - Handmade Gift Bangladesh",
+    nameBn: "ফুলের রেজিন কলম",
+    description: "Beautiful floral design resin pen with preserved flowers. হাতে তৈরি কলম। Handmade gift Bangladesh writing accessory perfect for daily use. Price: ৳250. Free delivery Dhaka (Gulshan, Dhanmondi, Mirpur).",
     price: 250,
     category: "pens",
     images: [
@@ -870,8 +895,9 @@ export const products: Product[] = [
   // ============ DECORATIVE FRAMES ============
   {
     id: "dframe-1",
-    name: "Birthday Celebration Resin Frame",
-    description: "Personalized birthday frame with handcrafted resin flowers, decorative frame perfect for special birthday gifts and memories",
+    name: "Birthday Celebration Resin Frame - Custom Gift Bangladesh",
+    nameBn: "জন্মদিনের ফ্রেম",
+    description: "Personalized birthday frame with handcrafted resin flowers. জন্মদিনের উপহার। Decorative frame perfect for special birthday gifts and memories in Bangladesh. Price: ৳850. Free delivery Dhaka.",
     price: 850,
     category: "frames",
     images: [
@@ -896,8 +922,9 @@ export const products: Product[] = [
   // ============ RINGS ============
   {
     id: "ring-1",
-    name: "Floral Resin Ring",
-    description: "Delicate floral design ring with preserved flowers in resin, handcrafted jewelry perfect for everyday elegance",
+    name: "Floral Resin Ring - Handmade Jewelry Bangladesh",
+    nameBn: "ফুলের রেজিন আংটি",
+    description: "Delicate floral design ring with preserved flowers in resin. হাতে তৈরি আংটি। Handmade resin jewelry Bangladesh perfect for everyday elegance. Price: ৳350. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 350,
     category: "rings",
     images: [
@@ -907,8 +934,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-2",
-    name: "Nature Garden Ring",
-    description: "Nature-inspired garden ring with botanical elements in resin, handcrafted jewelry for nature lovers",
+    name: "Nature Garden Ring - Handmade Resin Jewelry",
+    nameBn: "প্রকৃতির বাগান আংটি",
+    description: "Nature-inspired garden ring with botanical elements in resin. হাতে তৈরি গহনা। Handmade resin jewelry Bangladesh for nature lovers. Price: ৳350. Free delivery in Dhaka areas.",
     price: 350,
     category: "rings",
     images: [
@@ -918,8 +946,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-3",
-    name: "Crystal Flower Ring",
-    description: "Crystal-clear flower ring with preserved petals in resin, elegant handcrafted jewelry",
+    name: "Crystal Flower Ring - Handmade Resin Jewelry",
+    nameBn: "ক্রিস্টাল ফুল আংটি",
+    description: "Crystal-clear flower ring with preserved petals in resin. হাতে তৈরি রেজিন জুয়েলারি। Elegant handmade resin jewelry Bangladesh. Price: ৳350. Free delivery Gulshan, Dhanmondi, Mirpur.",
     price: 350,
     category: "rings",
     images: [
@@ -929,8 +958,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-4",
-    name: "Botanical Element Ring",
-    description: "Organic botanical ring with natural plant elements preserved in resin, unique handcrafted design",
+    name: "Botanical Element Ring - Handmade Resin Jewelry",
+    nameBn: "বোটানিক্যাল আংটি",
+    description: "Organic botanical ring with natural plant elements preserved in resin. প্রাকৃতিক উপাদান। Unique handmade resin jewelry Bangladesh design. Price: ৳350. Free delivery in Dhaka.",
     price: 350,
     category: "rings",
     images: [
@@ -940,8 +970,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-5",
-    name: "Ocean Wave Ring",
-    description: "Ocean-inspired wave ring with blue hues in resin, handcrafted jewelry with flowing design",
+    name: "Ocean Wave Ring - Handmade Resin Jewelry",
+    nameBn: "সমুদ্র ঢেউ আংটি",
+    description: "Ocean-inspired wave ring with blue hues in resin. সমুদ্রের ডিজাইন। Handmade resin jewelry Bangladesh with flowing design. Price: ৳350. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 350,
     category: "rings",
     images: [
@@ -951,8 +982,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-6",
-    name: "Garden Bloom Ring",
-    description: "Blooming garden flowers preserved in ring form, colorful handcrafted resin jewelry",
+    name: "Garden Bloom Ring - Handmade Resin Jewelry",
+    nameBn: "বাগান ফুল আংটি",
+    description: "Blooming garden flowers preserved in ring form. রঙিন ফুলের আংটি। Colorful handmade resin jewelry Bangladesh. Price: ৳350. Free delivery in Dhaka areas.",
     price: 350,
     category: "rings",
     images: [
@@ -962,8 +994,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-7",
-    name: "Sunset Colors Ring",
-    description: "Warm sunset gradient ring design with beautiful color transition in handcrafted resin",
+    name: "Sunset Colors Ring - Handmade Resin Jewelry",
+    nameBn: "সন্ধ্যার রঙ আংটি",
+    description: "Warm sunset gradient ring design with beautiful color transition. সন্ধ্যার রঙের ডিজাইন। Handmade resin jewelry Bangladesh. Price: ৳350. Free delivery Dhaka (Gulshan, Dhanmondi, Mirpur).",
     price: 350,
     category: "rings",
     images: [
@@ -973,8 +1006,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-8",
-    name: "Starlight Shimmer Ring",
-    description: "Starlight-inspired ring with glitter elements in resin, sparkling handcrafted jewelry",
+    name: "Starlight Shimmer Ring - Handmade Resin Jewelry",
+    nameBn: "তারার ঝলক আংটি",
+    description: "Starlight-inspired ring with glitter elements in resin. ঝলমলে আংটি। Sparkling handmade resin jewelry Bangladesh. Price: ৳350. Free delivery in Dhaka areas.",
     price: 350,
     category: "rings",
     images: [
@@ -984,8 +1018,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-9",
-    name: "Rainbow Garden Ring",
-    description: "Vibrant rainbow colors in garden design, multicolor handcrafted resin ring",
+    name: "Rainbow Garden Ring - Handmade Resin Jewelry",
+    nameBn: "রংধনু বাগান আংটি",
+    description: "Vibrant rainbow colors in garden design. রংধনু রঙের আংটি। Multicolor handmade resin jewelry Bangladesh. Price: ৳350. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 350,
     category: "rings",
     images: [
@@ -995,8 +1030,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-10",
-    name: "Pastel Dream Ring",
-    description: "Soft pastel colored ring design in resin, dreamy handcrafted jewelry in gentle hues",
+    name: "Pastel Dream Ring - Handmade Resin Jewelry",
+    nameBn: "পাস্টেল স্বপ্ন আংটি",
+    description: "Soft pastel colored ring design in resin. নরম রঙের আংটি। Dreamy handmade resin jewelry Bangladesh in gentle hues. Price: ৳350. Free delivery in Dhaka.",
     price: 350,
     category: "rings",
     images: [
@@ -1006,8 +1042,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-11",
-    name: "Vintage Charm Ring",
-    description: "Vintage-style charm ring with floral elements in resin, classic handcrafted design",
+    name: "Vintage Charm Ring - Handmade Resin Jewelry",
+    nameBn: "ভিনটেজ আংটি",
+    description: "Vintage-style charm ring with floral elements in resin. ভিনটেজ ডিজাইন। Classic handmade resin jewelry Bangladesh design. Price: ৳350. Free delivery Gulshan, Dhanmondi, Mirpur.",
     price: 350,
     category: "rings",
     images: [
@@ -1017,8 +1054,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-12",
-    name: "Butterfly Garden Ring",
-    description: "Delicate butterfly in garden scene ring with preserved elements, nature-inspired handcrafted resin jewelry",
+    name: "Butterfly Garden Ring - Handmade Resin Jewelry",
+    nameBn: "প্রজাপতি বাগান আংটি",
+    description: "Delicate butterfly in garden scene ring with preserved elements. প্রজাপতি ডিজাইন। Nature-inspired handmade resin jewelry Bangladesh. Price: ৳350. Free delivery in Dhaka areas.",
     price: 350,
     category: "rings",
     images: [
@@ -1028,8 +1066,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-13",
-    name: "Moonlight Bloom Ring",
-    description: "Moonlit blooms ring design with ethereal floral elements, handcrafted resin jewelry",
+    name: "Moonlight Bloom Ring - Handmade Resin Jewelry",
+    nameBn: "চাঁদের আলো ফুল আংটি",
+    description: "Moonlit blooms ring design with ethereal floral elements. চাঁদের ডিজাইন। Handmade resin jewelry Bangladesh. Price: ৳350. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 350,
     category: "rings",
     images: [
@@ -1039,8 +1078,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-14",
-    name: "Spring Meadow Ring",
-    description: "Fresh spring meadow design ring with botanical elements, vibrant handcrafted resin jewelry",
+    name: "Spring Meadow Ring - Handmade Resin Jewelry",
+    nameBn: "বসন্ত মাঠ আংটি",
+    description: "Fresh spring meadow design ring with botanical elements. বসন্তের ফুল। Vibrant handmade resin jewelry Bangladesh. Price: ৳350. Free delivery in Dhaka.",
     price: 350,
     category: "rings",
     images: [
@@ -1050,8 +1090,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-15",
-    name: "Golden Petals Ring",
-    description: "Golden petal design ring with shimmer effect in resin, elegant handcrafted jewelry",
+    name: "Golden Petals Ring - Handmade Resin Jewelry",
+    nameBn: "সোনালী পাপড়ি আংটি",
+    description: "Golden petal design ring with shimmer effect in resin. সোনালী ডিজাইন। Elegant handmade resin jewelry Bangladesh. Price: ৳350. Free delivery Gulshan, Dhanmondi, Mirpur.",
     price: 350,
     category: "rings",
     images: [
@@ -1061,8 +1102,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-16",
-    name: "Crystal Garden Ring",
-    description: "Crystal elements in garden ring design with sparkling resin, handcrafted jewelry",
+    name: "Crystal Garden Ring - Handmade Resin Jewelry",
+    nameBn: "ক্রিস্টাল বাগান আংটি",
+    description: "Crystal elements in garden ring design with sparkling resin. ঝলমলে বাগান। Handmade resin jewelry Bangladesh. Price: ৳350. Free delivery in Dhaka areas.",
     price: 350,
     category: "rings",
     images: [
@@ -1072,8 +1114,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-17",
-    name: "Enchanted Forest Ring",
-    description: "Mystical enchanted forest ring design with magical elements, handcrafted resin jewelry",
+    name: "Enchanted Forest Ring - Handmade Resin Jewelry",
+    nameBn: "জাদুকরী বন আংটি",
+    description: "Mystical enchanted forest ring design with magical elements. জাদুকরী ডিজাইন। Handmade resin jewelry Bangladesh. Price: ৳350. Free delivery Dhaka (Gulshan, Dhanmondi, Bashundhara).",
     price: 350,
     category: "rings",
     images: [
@@ -1083,8 +1126,9 @@ export const products: Product[] = [
   },
   {
     id: "ring-18",
-    name: "Elegant Flora Ring",
-    description: "Elegant floral arrangement ring with sophisticated design, handcrafted resin jewelry",
+    name: "Elegant Flora Ring - Handmade Resin Jewelry",
+    nameBn: "এলিগ্যান্ট ফুল আংটি",
+    description: "Elegant floral arrangement ring with sophisticated design. মার্জিত ফুলের ডিজাইন। Handmade resin jewelry Bangladesh. Price: ৳350. Free delivery in Dhaka.",
     price: 350,
     category: "rings",
     images: [

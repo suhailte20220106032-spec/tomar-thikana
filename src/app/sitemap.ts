@@ -38,6 +38,51 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    // Delivery Areas page (Phase 2)
+    {
+      url: `${SITE_URL}/delivery-areas`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    // Blog index (content hub)
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    // Blog articles (Phase 3)
+    {
+      url: `${SITE_URL}/blog/resin-jewelry-price-bangladesh-2025`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/blog/jhumka-designs-bengali-weddings-2025`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/blog/eid-gift-ideas-bangladesh-2025`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/blog/preserved-flower-jewelry-guide-bangladesh`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/blog/best-handmade-gift-shops-dhaka-2025`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
   // Dynamic product pages (all 118 products)

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { generateFAQSchema, generateJsonLd } from "@/lib/structured-data";
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const SITE_URL = "https://tomar-thikana.vercel.app";
 
@@ -70,6 +71,7 @@ export default function CustomOrderLayout({
 
   return (
     <>
+      <GoogleAnalytics measurementId="G-32CSH1ELTB" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={generateJsonLd(faqSchema)}

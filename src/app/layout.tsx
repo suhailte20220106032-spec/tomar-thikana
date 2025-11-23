@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import ClientProviders from "@/components/ClientProviders";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { generateOrganizationSchema, generateJsonLd } from "@/lib/structured-data";
 import "./globals.css";
 
@@ -105,6 +106,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics measurementId="G-32CSH1ELTB" />
         <ClientProviders>{children}</ClientProviders>
       </body>
     </html>

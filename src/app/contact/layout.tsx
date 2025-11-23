@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const SITE_URL = "https://tomar-thikana.vercel.app";
 
@@ -30,5 +31,10 @@ export default function ContactLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <GoogleAnalytics measurementId="G-32CSH1ELTB" />
+      {children}
+    </>
+  );
 }

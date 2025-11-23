@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 export const metadata: Metadata = {
   title: "Blog - Jewelry Tips & Guides | তোমার ঠিকানা",
@@ -27,6 +28,7 @@ export default function BlogLayout({
 }) {
   return (
     <>
+      <GoogleAnalytics measurementId="G-32CSH1ELTB" />
       <Navigation />
       <main className="pt-20">
         {children}

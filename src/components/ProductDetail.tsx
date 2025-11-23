@@ -223,7 +223,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 size="lg"
-                className="flex-1"
+                className="flex-1 h-12 sm:h-11 p-2"
                 onClick={handleAddToCart}
                 disabled={!isAvailable}
               >
@@ -233,6 +233,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               <Button
                 size="lg"
                 variant="outline"
+                className="flex-1 h-12 sm:h-11 p-2"
                 onClick={handleContact}
                 disabled={!isAvailable}
               >

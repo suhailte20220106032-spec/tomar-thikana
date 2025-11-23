@@ -43,13 +43,13 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 slide-up">
-            <h1 className="font-display text-5xl md:text-6xl font-bold leading-tight">
+            <h1 className="font-display text-3xl md:text-4xl font-bold leading-tight">
               Handmade Resin Jewelry & Custom Gifts in Bangladesh
-              <span className="block text-3xl md:text-4xl mt-4 text-primary">
+              <span className="block text-2xl md:text-3xl mt-4 text-primary">
                 হাতে তৈরি রেজিন জুয়েলারি ও কাস্টম গিফট | ঢাকা
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-sm md:text-xl text-muted-foreground leading-relaxed">
               Shop 118+ handmade items: Jhumka earrings ৳120-৳990, Resin pendants, Photo frames, Keychains. 
               <span className="block mt-2 font-semibold text-foreground">
                 Free delivery in Dhaka (Gulshan, Dhanmondi, Bashundhara, Mirpur, Banasree, Niketon)

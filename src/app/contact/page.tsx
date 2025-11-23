@@ -63,7 +63,7 @@ export default function ContactPage() {
                         href="mailto:contact@tomarthikana.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        contact@tomarthikana.com
+                        tomarthikanaaa@gmail.com
                       </a>
                     </div>
                   </div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                         href="tel:+8801234567890"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +880 123-456-7890
+                        +8801602854493
                       </a>
                     </div>
                   </div>
@@ -111,13 +111,13 @@ export default function ContactPage() {
                 <CardContent>
                   <div className="flex space-x-4">
                     <a
-                      href="#"
+                      href="https://www.instagram.com/tomarthikanaaa/"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
                       <Instagram className="h-5 w-5" />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.facebook.com/tomarthikanaaa"
                       className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
                       <Facebook className="h-5 w-5" />

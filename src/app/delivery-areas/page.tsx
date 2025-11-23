@@ -293,7 +293,7 @@ export default function DeliveryAreasPage() {
           {/* Contact CTA */}
           <div className="mt-12 text-center">
             <p className="text-lg text-muted-foreground mb-4">
-              Can't find your area? Contact us for delivery availability.
+              Can&apos;t find your area? Contact us for delivery availability.
               <br />
               <span className="text-foreground">
                 আপনার এলাকা খুঁজে পাচ্ছেন না? ডেলিভারি সম্পর্কে জানতে যোগাযোগ করুন।

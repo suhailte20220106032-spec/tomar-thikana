@@ -117,7 +117,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                         <div className="relative aspect-square bg-muted">
                           <Image
                             src={image}
-                            alt={`${product.name} - Image ${index + 1}`}
+                            alt={`${product.name} - Handmade resin jewelry Bangladesh - Price ${formatPrice(product.price)} - Free delivery Dhaka - View ${index + 1}`}
                             fill
                             className="object-cover"
                             priority={index === 0}
@@ -147,7 +147,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                   >
                     <Image
                       src={image}
-                      alt={`${product.name} - Image ${index + 1}`}
+                      alt={`${product.name} - Resin jewelry Bangladesh ${formatPrice(product.price)} - Thumbnail ${index + 1}`}
                       fill
                       className="object-cover"
                       quality={60}

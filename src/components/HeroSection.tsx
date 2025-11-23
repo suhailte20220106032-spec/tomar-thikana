@@ -22,19 +22,19 @@ const HeroSection = () => {
   const heroImages = [
     {
       src: "/assets/hero-image.jpg",
-      alt: "Handmade gifts and jewelry",
+      alt: "Handmade resin jewelry Bangladesh - তোমার ঠিকানা - Free delivery Dhaka",
     },
     {
       src: "/assets/product-resin-1.jpg",
-      alt: "Beautiful resin jewelry",
+      alt: "Beautiful resin jewelry Bangladesh - Handmade earrings pendants - Price ৳80-৳1000",
     },
     {
       src: "/assets/product-frame-1.jpg",
-      alt: "Custom photo frames",
+      alt: "Custom photo frames Dhaka - Personalized gift Bangladesh - Handmade resin frames",
     },
     {
       src: "/assets/product-gift-1.jpg",
-      alt: "Personalized gift boxes",
+      alt: "Personalized gift boxes Bangladesh - Custom gifts Dhaka - Handmade gift shop",
     },
   ];
 
@@ -44,11 +44,16 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 slide-up">
             <h1 className="font-display text-5xl md:text-6xl font-bold leading-tight">
-              Handcrafted Gifts,{" "}
-              <span className="text-primary">Made with Love</span>
+              Handmade Resin Jewelry & Custom Gifts in Bangladesh
+              <span className="block text-3xl md:text-4xl mt-4 text-primary">
+                হাতে তৈরি রেজিন জুয়েলারি ও কাস্টম গিফট | ঢাকা
+              </span>
             </h1>
-            <p className="text-lg text-muted-foreground">
-              Every piece is uniquely crafted to preserve your special moments and create lasting memories.
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Shop 118+ handmade items: Jhumka earrings ৳120-৳990, Resin pendants, Photo frames, Keychains. 
+              <span className="block mt-2 font-semibold text-foreground">
+                Free delivery in Dhaka (Gulshan, Dhanmondi, Bashundhara, Mirpur, Banasree, Niketon)
+              </span>
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="shadow-soft">

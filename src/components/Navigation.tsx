@@ -3,12 +3,16 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { useCartStore } from "@/store/cart-store";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const getTotalItems = useCartStore((state) => state.getTotalItems);
+  const cartItemCount = getTotalItems();
 
   const links = [
     { to: "/", label: "Home" },
@@ -44,17 +48,55 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
+            
+            {/* Cart Icon */}
+            <Link href="/cart" className="relative">
+              <Button
+                variant={isActive("/cart") ? "default" : "ghost"}
+                size="icon"
+                className="ml-2"
+              >
+                <ShoppingCart className="h-5 w-5" />
+                {cartItemCount > 0 && (
+                  <Badge 
+                    variant="destructive" 
+                    className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-xs"
+                  >
+                    {cartItemCount > 99 ? '99+' : cartItemCount}
+                  </Badge>
+                )}
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          <div className="flex items-center gap-2 md:hidden">
+            {/* Mobile Cart Icon */}
+            <Link href="/cart" className="relative">
+              <Button
+                variant={isActive("/cart") ? "default" : "ghost"}
+                size="icon"
+              >
+                <ShoppingCart className="h-5 w-5" />
+                {cartItemCount > 0 && (
+                  <Badge 
+                    variant="destructive" 
+                    className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-xs"
+                  >
+                    {cartItemCount > 99 ? '99+' : cartItemCount}
+                  </Badge>
+                )}
+              </Button>
+            </Link>
+            
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

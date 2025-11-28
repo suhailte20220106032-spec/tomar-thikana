@@ -12,11 +12,13 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import { ShoppingCart, MessageCircle, Minus, Plus } from "lucide-react";
+import { ShoppingCart, MessageCircle, Minus, Plus, Check } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import type { CarouselApi } from "@/components/ui/carousel";
 import { formatPrice, categories } from "@/lib/products";
 import type { Product } from "@/lib/products";
+import { useCartStore } from "@/store/cart-store";
+import { toast } from "sonner";
 
 interface ProductDetailProps {
   product: Product;
@@ -27,6 +29,9 @@ export default function ProductDetail({ product }: ProductDetailProps) {
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
+  const [isAdding, setIsAdding] = useState(false);
+
+  const addItem = useCartStore((state) => state.addItem);
 
   const plugin = useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true })
@@ -63,8 +68,26 @@ export default function ProductDetail({ product }: ProductDetailProps) {
   };
 
   const handleAddToCart = () => {
-    // TODO: Implement add to cart functionality
-    console.log("Add to cart:", { product, quantity });
+    setIsAdding(true);
+    
+    // Add items based on selected quantity
+    for (let i = 0; i < quantity; i++) {
+      addItem({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: product.images[0],
+        category: product.category,
+      });
+    }
+    
+    toast.success(`Added ${quantity} ${quantity === 1 ? 'item' : 'items'} to cart`, {
+      description: product.name,
+      duration: 2000,
+    });
+    
+    // Reset animation state
+    setTimeout(() => setIsAdding(false), 1000);
   };
 
   // TODO: Make this dynamic/configurable later
@@ -225,10 +248,19 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 size="lg"
                 className="flex-1 h-12 sm:h-11 p-2"
                 onClick={handleAddToCart}
-                disabled={!isAvailable}
+                disabled={!isAvailable || isAdding}
               >
-                <ShoppingCart className="mr-2 h-5 w-5" />
-                Add to Cart
+                {isAdding ? (
+                  <>
+                    <Check className="mr-2 h-5 w-5" />
+                    Added to Cart
+                  </>
+                ) : (
+                  <>
+                    <ShoppingCart className="mr-2 h-5 w-5" />
+                    Add to Cart
+                  </>
+                )}
               </Button>
               <Button
                 size="lg"

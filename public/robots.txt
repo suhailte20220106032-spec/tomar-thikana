@@ -1,9 +1,14 @@
 # robots.txt for Tomar Thikana - Handmade Jewelry & Gifts Bangladesh
 # Site: https://tomar-thikana.vercel.app
 
-# Main crawlers - Allow all
+# Main crawlers - Allow all except API and internal routes
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /order-confirmation/
+Disallow: /cart
+Disallow: /checkout
 
 # Sitemap location
 Sitemap: https://tomar-thikana.vercel.app/sitemap.xml
@@ -11,6 +16,11 @@ Sitemap: https://tomar-thikana.vercel.app/sitemap.xml
 # Google crawlers
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /order-confirmation/
+Disallow: /cart
+Disallow: /checkout
 Crawl-delay: 0
 
 User-agent: Googlebot-Image
@@ -19,10 +29,20 @@ Allow: /public/
 
 User-agent: Googlebot-Mobile
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /order-confirmation/
+Disallow: /cart
+Disallow: /checkout
 
 # Bing crawler
 User-agent: Bingbot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /order-confirmation/
+Disallow: /cart
+Disallow: /checkout
 Crawl-delay: 1
 
 # Social media crawlers for rich previews
@@ -44,12 +64,27 @@ Allow: /
 # Search engine crawlers
 User-agent: Slurp
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /order-confirmation/
+Disallow: /cart
+Disallow: /checkout
 
 User-agent: DuckDuckBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /order-confirmation/
+Disallow: /cart
+Disallow: /checkout
 
 User-agent: Baiduspider
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /order-confirmation/
+Disallow: /cart
+Disallow: /checkout
 
 # Block bad bots (optional - uncomment if needed)
 # User-agent: AhrefsBot
@@ -58,4 +93,9 @@ Allow: /
 # User-agent: SemrushBot
 # Disallow: /
 
-# No disallowed paths - all pages should be indexed
+# Routes excluded from indexing:
+# - /api/* - API endpoints (not for search engines)
+# - /admin/* - Admin dashboard (authentication required)
+# - /cart - Shopping cart (requires session)
+# - /checkout - Checkout process (requires cart data)
+# - /order-confirmation/* - Private order pages (customer-specific)
